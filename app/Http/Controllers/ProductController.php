@@ -19,6 +19,7 @@ class ProductController extends Controller
 
     public function index(){
         try {
+            //throw new \Exception('some thing wrong');
              return $this->responseSuccess($this->productRepository->allProduct(), 'data fetch success');
 
         }catch (\Exception $ex){
