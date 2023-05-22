@@ -24,7 +24,8 @@ class AuthController extends Controller
             $data = [
                 'user' => $user,
                 'token' => $createToken,
-                'token_type' => "Bearer"
+                'token_type' => "Bearer",
+                
             ];
            return $this->responseSuccess($data, 'login success');
         }

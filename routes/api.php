@@ -27,6 +27,8 @@ Route::group([
 ],function(){
 
 Route::get('/products', [ProductController::class, 'index']);
+
+
 });
 Route::post('/user/register', [UserController::class, 'store']);
 Route::post('/user/login', [AuthController::class, 'login']);
